@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container-fluid">
+  <div class="row">
+    <nav class="nav navbar-dark bg-dark">
+      <a class="nav-link" href="javascript:void(0)" routerLink="/">Home</a>
+      <a class="nav-link" href="javascript:void(0)" routerLink="/chatRoom">Chat Room</a>
+    </nav>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+        <form class="form-inline">
+            <div class="form-group">
+                <button id="connect" class="btn btn-primary btn-lg" (click)="connectDisConnectFunction(true)">Connect</button>
+            </div>
+            <div class="form-group">
+              <button id="disconnect" class="btn btn-warning btn-lg" (click)="connectDisConnectFunction(false)">Disconnect</button>
+            </div>
+            <div class="form-group">
+              <label>{{disableFlag ? 'Connected': 'DisConnected'}}</label>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

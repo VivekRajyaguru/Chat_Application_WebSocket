@@ -1,0 +1,16 @@
+
+<div class="form-row">
+    <div class="form-group col-md-6">
+      <input type="text" class="form-control" placeholder="User Name" [(ngModel)]="userName">
+    </div>
+</div>
+<div class="form-row">
+    <div class="form-group col-md-6">
+      <input type="text" class="form-control" placeholder="Mesage" [disabled]="!userName" [(ngModel)]="comments">
+      <button (click)="sendMessage()">Send</button>
+    </div>
+    
+</div>
+<div id="messages">
+
+</div>
